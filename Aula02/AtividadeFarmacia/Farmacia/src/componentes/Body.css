@@ -2,8 +2,14 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 629px; /* OBS: não conseguir botar 100% de height não sei porque */
+    height: 100%; 
+    background-image: url(./fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }   
+
+/* MSG BODY COMPLETO */
+
 .msgBody{
     display: flex;
     flex-direction: column;
@@ -27,4 +33,50 @@
     border-radius: 25px;
     width: 50%;   
     font-size: 16px;
+}
+
+/* TABLE DE AGENDAMENTO */
+
+
+.agendamentoConsultaDiv{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 50px;
+}
+.agendamentoConsultaTable{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 25%;
+    height: 60%;
+    
+
+    gap: 25px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+    background-color: #e23e57;
+}
+.inputs-agendamentoTable{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+.button-agendamento{
+    width: 250px;
+    height: 65px;
+    background-color: #ce1f3a;
+    border-radius: 25px;
+    border-color: white;
+    border-color: transparent;
+    font-size: 35px;
+    color:black;
 }
