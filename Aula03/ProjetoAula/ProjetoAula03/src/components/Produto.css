@@ -1,0 +1,17 @@
+.produto-container{
+    border: 2px solid #2564;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2564;
+    box-shadow: 0 0 10px #2564;
+    display: flexbox;
+    width: 200px;
+    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
