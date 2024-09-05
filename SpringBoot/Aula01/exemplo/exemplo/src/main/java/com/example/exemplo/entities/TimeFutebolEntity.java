@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity(name = "time_futebol")
-public class TimeFutebol {
+public class TimeFutebolEntity {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
