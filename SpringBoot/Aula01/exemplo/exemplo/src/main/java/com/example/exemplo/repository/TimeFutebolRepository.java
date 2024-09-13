@@ -5,9 +5,3 @@ import org.springframework.stereotype.Repository;
 
 import com.example.exemplo.entities.TimeFutebolEntity;
 
-@Repository
-public interface TimeFutebolRepository extends JpaRepository<TimeFutebolEntity, Long>{
-    
-       
-    
-}

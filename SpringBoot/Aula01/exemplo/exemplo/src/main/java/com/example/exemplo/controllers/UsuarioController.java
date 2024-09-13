@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.exemplo.services.UsuarioServices;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 
 @RestController
@@ -21,6 +24,9 @@ public class UsuarioController {
         var times = UsuarioServices.getAllTimes();
         return ResponseEntity.ok(times);
     }
+
+    
+    
     
 
 }

@@ -5,15 +5,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
 @Entity(name = "usuario")
 public class UsuarioEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    
     @Column(name = "id_usuario")
     private Long id;
+    
+    @OneToOne(mappedBy = "usuario")
+    private ClienteEntity clienteEntity;
 
     @Column(name = "telefone")
     private String telefone;
@@ -24,6 +27,9 @@ public class UsuarioEntity {
     @Column(name = "senha")
     private String senha;
 
+    @Column(name = "cpf")
+    private String cpf;
+
     @Column(name = "nome")
     private String nome;
 
@@ -32,6 +38,8 @@ public class UsuarioEntity {
 
     @Column(name = "nacionalidade")
     private String nacionalidade;
+
+    
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
@@ -79,6 +87,13 @@ public class UsuarioEntity {
 
     public void setNacionalidade(String nacionalidade) {
         this.nacionalidade = nacionalidade;
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+    public String getCpf(){
+        return cpf;
     }
 
 }
