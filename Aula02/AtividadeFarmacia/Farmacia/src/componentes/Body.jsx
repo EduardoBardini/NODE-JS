@@ -1,20 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect, useContext} from 'react';
+import { GlobalContext } from '../context/GeralContext';
 import './Body.css'
-import { useEffect } from 'react';
+
+
+ 
+
+
 
 function Body(){
+
   
-  let agendadosRealizados = [];
+  const {usuarioAgendado, setUsuarioAgendado} = useContext(GlobalContext);
+  
+
+  
+  
 
   const [inputNome, setNome] = useState();
   const [telefone, setTelefone] = useState();
   const [data, setData] = useState();
-  const [possuiPrioridade, setPossuiPrioridade] = useState(false);
+  const [possuiPrioridade, setPossuiPrioridade] = useState();
   
 
   useEffect(() => {
-    console.log(agendadosRealizados)
-  },[agendadosRealizados])
+    console.log(usuarioAgendado)
+  },[usuarioAgendado])
+
+  
 
 
   
@@ -30,10 +42,9 @@ function Body(){
       prioritario: possuiPrioridade
     }
 
-    agendadosRealizados.push(agendamento);
-
+    
     alert("Agendamento realizado!");
-    console.log(agendadosRealizados);
+    console.log(usuarioAgendado);
 
   }
 
@@ -57,11 +68,11 @@ function Body(){
           <div className='radioButton'>
             <p>Prioridade: </p>
             <label>
-             <input type='radio' name='tipoConta' value={ false }  checked={possuiPrioridade === true} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
+             <input type='radio' name='tipoConta' value={ false }  checked={possuiPrioridade === false} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
              <label>  Normal</label>
             </label>
             <label>
-            <input type='radio' name='tipoConta' value={ true }  checked={possuiPrioridade === false} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
+            <input type='radio' name='tipoConta' value={ true }  checked={possuiPrioridade === true} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
               <label>  Preferencial</label>
             </label>
           </div>

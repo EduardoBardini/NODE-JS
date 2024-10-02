@@ -4,3 +4,8 @@
     width: 100%;
     flex-direction: column;
 }
+.app-containerTwo{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
