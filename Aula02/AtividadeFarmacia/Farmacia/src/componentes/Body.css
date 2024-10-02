@@ -51,10 +51,8 @@
     display: flex;
     background-color: white;
     flex-direction: column;
-    width: 25%;
+    width: 35%;
     height: 60%;
-    
-
     gap: 25px;
     border-radius: 25px;
     align-items: center;
@@ -79,4 +77,10 @@
     border-color: transparent;
     font-size: 35px;
     color:black;
+}
+
+.radioButton{
+    display: flex;
+    gap: 25px;
+    
 }
