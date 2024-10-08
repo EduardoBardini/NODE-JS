@@ -8,7 +8,9 @@
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
     padding-top: 50px;
     background-color: #e23e57;;
 }

@@ -42,9 +42,22 @@ function Body(){
       prioritario: possuiPrioridade
     }
 
+    if(agendamento.prioritario == "false"){
+      agendamento.prioritario = "Não"
+    }else {
+      agendamento.prioritario = "Sim"
+    }
+
+    console.log(inputNome);
+
     
     alert("Agendamento realizado!");
+    console.log(agendamento);
+
+    setUsuarioAgendado(agendamento);
+
     console.log(usuarioAgendado);
+    
 
   }
 

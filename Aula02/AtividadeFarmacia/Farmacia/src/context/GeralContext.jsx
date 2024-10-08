@@ -7,6 +7,8 @@ export const GlobalContextProvider = ({children}) => {
     const [ usuarioAgendado, setUsuarioAgendado ] = useState([])
 
 
+
+
     return(
         <GlobalContext.Provider value={{usuarioAgendado, setUsuarioAgendado}}>
             {children}
