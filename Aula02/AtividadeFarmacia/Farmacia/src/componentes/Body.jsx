@@ -16,10 +16,10 @@ function Body(){
   
   
 
-  const [inputNome, setNome] = useState();
-  const [telefone, setTelefone] = useState();
-  const [data, setData] = useState();
-  const [possuiPrioridade, setPossuiPrioridade] = useState();
+  const [inputNome, setNome] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [data, setData] = useState("");
+  const [possuiPrioridade, setPossuiPrioridade] = useState("");
   
 
   useEffect(() => {
@@ -44,7 +44,8 @@ function Body(){
 
     
     alert("Agendamento realizado!");
-    console.log(usuarioAgendado);
+    setUsuarioAgendado([...usuarioAgendado ,agendamento]);
+   
 
   }
 
@@ -68,11 +69,11 @@ function Body(){
           <div className='radioButton'>
             <p>Prioridade: </p>
             <label>
-             <input type='radio' name='tipoConta' value={ false }  checked={possuiPrioridade === false} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
+             <input type='radio' name='tipoConta' value="Normal"  checked={possuiPrioridade === "Normal"} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
              <label>  Normal</label>
             </label>
             <label>
-            <input type='radio' name='tipoConta' value={ true }  checked={possuiPrioridade === true} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
+            <input type='radio' name='tipoConta' value="Preferencial"  checked={possuiPrioridade === "Preferencial"} onChange={(e) => setPossuiPrioridade(e.target.value)}/>
               <label>  Preferencial</label>
             </label>
           </div>

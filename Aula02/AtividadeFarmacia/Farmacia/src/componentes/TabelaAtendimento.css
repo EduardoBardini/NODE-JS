@@ -1,0 +1,12 @@
+.atendimentoTabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    gap: 25px   ;
+    background-color: white;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+}
