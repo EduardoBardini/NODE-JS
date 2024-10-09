@@ -9,13 +9,8 @@
     width: 50%;
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     flex-direction: column;
     gap: 25px;
-=======
-    gap: 25px;
-    flex-direction: column;
->>>>>>> 98a46ce957d8d8354a2e0ab8ba8627ca2d67bcb0
     padding-top: 50px;
     background-color: #e23e57;;
 }
