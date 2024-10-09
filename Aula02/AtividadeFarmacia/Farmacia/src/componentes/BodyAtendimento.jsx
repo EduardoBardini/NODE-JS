@@ -1,10 +1,15 @@
 import './BodyAtendimento.css'
+<<<<<<< HEAD
 import { GlobalContext } from '../context/GeralContext';
 import { useState, useContext, useEffect } from "react";
 import TabelaAtendimento from './TabelaAtendimento';
 
 
 
+=======
+import { useState } from "react";
+import TabelaAtendimento from './TabelaAtendimento';
+>>>>>>> 98a46ce957d8d8354a2e0ab8ba8627ca2d67bcb0
 
 function BodyAtendimento(){
     
@@ -52,6 +57,7 @@ function BodyAtendimento(){
     return(
         <div className="divAtendimentoContainer">
            <div className="divFilaAtendimento">
+<<<<<<< HEAD
               <div className='divTituloFila'>
                <h1>FILA DE ATENDIMENTO</h1>
               </div>
@@ -64,6 +70,13 @@ function BodyAtendimento(){
               
               
 
+=======
+              <h1>FILA DE ATENDIMENTO</h1>
+              <div>
+                <TabelaAtendimento />
+              </div>
+              
+>>>>>>> 98a46ce957d8d8354a2e0ab8ba8627ca2d67bcb0
            </div>
            <div className='divPainelAtendimento'>
               <h1>PAINEL DE ATENDIMENTO</h1>
